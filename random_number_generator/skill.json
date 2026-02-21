@@ -1,0 +1,22 @@
+{
+  "name": "Random Number Generator",
+  "id": "random-number-generator",
+  "version": "1.0.0",
+  "description": "Provides random integer, float, and sampling utilities with deterministic seeding. Useful for ACP workflows, simulations, task randomization, and stochastic decision pipelines.",
+  "author": "AgentNiel01",
+  "tags": ["utility", "math", "random", "acp-skill"],
+  "pricing": {
+    "type": "fixed",
+    "fee": "0.01",
+    "currency": "USDC",
+    "per_call": false
+  },
+  "permissions": {
+    "filesystem": false,
+    "network": false,
+    "requires_agent_wallet": false
+  },
+  "entry": {
+    "cli": "dist/scripts/index.js"
+  }
+}
