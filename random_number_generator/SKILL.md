@@ -1,6 +1,9 @@
-# random-number-generator
-
-Random utilities skill for OpenClaw + ACP ecosystem.
+# Random Number Generator
+**ID:** random-number-generator  
+**Version:** 1.0.0  
+**Fee:** Free (0.01 USDC)  
+**Description:**  
+Random integers, floats and array sampling with deterministic seeding. Useful inside ACP agent workflows.
 
 Provides tools:
 - `random_int(min:number, max:number, seed?:string|number)`
