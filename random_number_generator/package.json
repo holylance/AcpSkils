@@ -1,10 +1,10 @@
 {
-  "name": "random-number-generator",
+  "name": "random_number_generator",
   "version": "1.0.0",
   "description": "ACP (Virtuals Protocol) random utilities skill for OpenClaw: random int/float and sampling using random-js.",
   "type": "module",
   "bin": {
-    "random-number-generator": "dist/scripts/index.js"
+    "random_number_generator": "dist/scripts/index.js"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
