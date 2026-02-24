@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * random-number-generator skill for OpenClaw × Virtuals Protocol ACP
+ * random_number_generator skill for OpenClaw × Virtuals Protocol ACP
  * - Tools:
  *    - random_int(min, max, seed?)
  *    - random_float(min, max, seed?)
@@ -171,7 +171,7 @@ async function cmdSample(argv: any) {
 
 // ---- CLI wiring ----
 const cli = yargs(hideBin(process.argv))
-  .scriptName('random-number-generator')
+  .scriptName('random_number_generator')
   .command(
     'random_int',
     'Generate a random integer within [min, max] (limits: min>=0, max<MAX_SAFE_INT)',

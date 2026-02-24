@@ -1,5 +1,5 @@
 # Random Number Generator
-**ID:** random-number-generator  
+**ID:** random_number_generator  
 **Version:** 1.0.0  
 **Fee:** Free (0.01 USDC)  
 **Description:**  
@@ -18,7 +18,7 @@ Provides tools:
 {
   "skills": {
     "load": {
-      "extraDirs": ["/absolute/path/to/random-number-generator"]
+      "extraDirs": ["/absolute/path/to/random_number_generator"]
     }
   }
 }

@@ -67,14 +67,14 @@ export function requestPayment(request: any): string {
  * - stdout(한 줄 JSON)을 deliverable로 그대로 반환
  *
  * 환경변수:
- * - SKILL_ROOT: random-number-generator 레포의 루트 절대경로
+ * - SKILL_ROOT: random_number_generator 레포의 루트 절대경로
  *   (여기에 dist/scripts/index.js가 존재해야 함)
  */
 export async function executeJob(request: any): Promise<ExecuteJobResult> {
   const mode = request.mode;
   const seed = request.seed;
 
-  // SKILL_ROOT는 random-number-generator 프로젝트 루트로 설정
+  // SKILL_ROOT는 random_number_generator 프로젝트 루트로 설정
   const skillRoot =
     process.env.SKILL_ROOT ?? process.cwd(); // 미설정 시 현재 경로 시도(권장: 환경변수로 명시)
   const cli = path.join(skillRoot, "dist", "scripts", "index.js");
@@ -107,7 +107,7 @@ export async function executeJob(request: any): Promise<ExecuteJobResult> {
 
   if (result.status !== 0) {
     const err = (result.stderr || "").trim();
-    return { deliverable: `ERROR: random-number-generator skill failed (${err || "unknown"})` };
+    return { deliverable: `ERROR: random_number_generator skill failed (${err || "unknown"})` };
   }
 
   const out = (result.stdout || "").trim();
